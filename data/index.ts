@@ -118,7 +118,7 @@ export const testimonials = [
       "Working with Atiqul Islam was a delight. His professionalism, timeliness, and commitment to excellence were clear from start to finish. Adrian's passion for development shines through in every aspect. If you want to enhance your website and brand, Atiqul is the perfect choice.",
     name: "Rashedul Islam",
     title: "Managing Director of Career Canvas",
-    img: '/test2.jpg'
+    img: '/test2.JPG'
   },
   {
     quote:
