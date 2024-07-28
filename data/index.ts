@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building a Hotel Project",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,69 +72,73 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    title: "Octalink Global Sourcing - Global Textile Company",
+    des: "OCTALINK GLOBAL SOURCING utilizes React.js, Tailwind CSS, MongoDB, Framer Motion, and AWS with dynamic animations to streamline global textile sourcing and procurement.",
+    img: "/bg1.JPG",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg","/md.svg","/fm.svg"],
+    link: "https://octalink-global-sourcing.netlify.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    title: "Career Canvas - Job Seeking Website",
+    des: "CareerCanvas is a sleek job hunting and recruitment platform using React.js, Tailwind CSS, MongoDB, AWS, and Framer Motion for smooth animations.",
+    img: "/bg2.JPG",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://career-canvas.netlify.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    title: "TrekTales a Tourist Website",
+    des: "TrekTales is a curated travel platform using React.js, Tailwind CSS, MongoDB, AWS, and Framer Motion to explore Europe's hidden gems and popular destinations.",
+    img: "/bg3.JPG",
+    iconLists: ["/next.svg", "/tail.svg", "/js.svg", "/three.svg", "/fm.svg"],
+    link: "https://trektales0108.netlify.app/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    title: "Donation Service Platform Design",
+    des: "Explore the wonders of our donation service website, we used React.js, Tailwind CSS, and MongoDB with cool animations to connect donors to impactful causes worldwide.",
+    img: "/bg4.JPG",
+    iconLists: ["/re.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg"],
+    link: "https://life-stream-donate-0108.netlify.app/",
   },
+  
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Atiqul Islam was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Atiqul is the ideal partner.",
+    name: "Kamrul Hasan",
+    title: "CEO of Octalink Global Sourcing",
+    img: "/test1.jpg"
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Atiqul Islam was a delight. His professionalism, timeliness, and commitment to excellence were clear from start to finish. Adrian's passion for development shines through in every aspect. If you want to enhance your website and brand, Atiqul is the perfect choice.",
+    name: "Rashedul Islam",
+    title: "Managing Director of Career Canvas",
+    img: '/test2.jpg'
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+      "Partnering with Atiqul Islam was a remarkable experience. Throughout our project, his professionalism, timeliness, and dedication to achieving outstanding results were consistently evident. Adrian's enthusiasm for all aspects of development is truly impressive. If you're aiming to elevate your website and brand, Atiqul is the perfect collaborator.",
+    name: "Shauaib Siddique Shawon",
+    title: "Director of TrekTales",
+    img: "/test3.jpg"
+  }
+  // {
+  //   quote:
+  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+  //   name: "Michael Johnson",
+  //   title: "Director of AlphaStream Technologies",
+  // },
+  // {
+  //   quote:
+  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+  //   name: "Michael Johnson",
+  //   title: "Director of AlphaStream Technologies",
+  // },
 ];
 
 export const companies = [
@@ -180,8 +184,8 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Full Stack Web Dev - PH",
+    desc: "Designed and developed web application using React.js, Next.js.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
@@ -205,13 +209,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: 'https://github.com/atikxcode?tab=repositories'
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/fb.svg",
+    link: 'https://www.facebook.com/atiqulislam.0108'
   },
   {
     id: 3,
     img: "/link.svg",
+    link: 'https://www.linkedin.com/in/atiqul-islam-901464288/'
   },
 ];
