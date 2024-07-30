@@ -76,7 +76,7 @@ export const projects = [
     des: "OCTALINK GLOBAL SOURCING utilizes React.js, Tailwind CSS, MongoDB, Framer Motion, and AWS with dynamic animations to streamline global textile sourcing and procurement.",
     img: "/bg1.JPG",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg","/md.svg","/fm.svg"],
-    link: "https://octalink-global-sourcing.netlify.app/",
+    link: "https://www.octalink-bd.com/",
   },
   {
     id: 2,
