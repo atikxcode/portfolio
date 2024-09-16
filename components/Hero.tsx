@@ -37,11 +37,17 @@ const Hero = () => {
             Creating Dynamic Web Experiences with Precision and Flair
           </h2>
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[30px] md:text-4xl lg:text-5xl"
             words="Crafting Exceptional User Experiences from Innovative Ideas"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl mt-4">
+          <img
+            className="h-[300px] w-[250px] md:h-[480px] md:w-[420px] lg:h-[570px] lg:w-[510px]  rounded-[50%] mt-5 mb-5 md:mt-10 md:mb-10 lg:mt-10 lg:mb-10"
+            src="/profile_pic.png"
+            alt=""
+          />
+
+          <p className="text-center md:tracking-wider mb-4 text-xl md:text-2xl lg:text-4xl mt-4">
             Hi, I&apos;m Atiqul Islam, a Full Stack Developer.
           </p>
           <a href="#about">

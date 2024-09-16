@@ -80,14 +80,23 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Career Canvas - Job Seeking Website",
-    des: "CareerCanvas is a sleek job hunting and recruitment platform using React.js, Tailwind CSS, MongoDB, AWS, and Framer Motion for smooth animations.",
-    img: "/bg2.JPG",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://career-canvas.netlify.app/",
+    title: "Avalon Sky a Banking Management Platform",
+    des: "Avalon Sky is a secure and intuitive platform designed to manage all your banking needs in one place. From tracking transactions to transferring funds and adding multiple bank accounts, BankVault offers a streamlined solution for handling your financial information. With a focus on security and ease of use, it simplifies the complexities of managing various bank accounts, ensuring you stay in control of your finances with confidence.",
+    img: "/project_bank.JPG",
+    iconLists: ["/next.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg"],
+    link: "https://banking-website-32fi.vercel.app/sign-in",
   },
   {
     id: 3,
+    title: "Clinica a Easy Solution For Your Daily Checkup",
+    des: "Clinica is a convenient online platform that simplifies the process of booking doctor appointments. With Clinica, patients can easily find and reserve checkup slots with healthcare professionals at their preferred time, all from the comfort of their home. Whether you're looking for a general checkup or a specialist consultation, Clinica connects you with qualified doctors, helping you manage your health appointments efficiently and stress-free.",
+    img: "/project_clinic.JPG",
+    iconLists: ["/next.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg"],
+    link: "https://clinica-drab.vercel.app/",
+  },
+  
+  {
+    id: 4,
     title: "TrekTales a Tourist Website",
     des: "TrekTales is a curated travel platform using React.js, Tailwind CSS, MongoDB, AWS, and Framer Motion to explore Europe's hidden gems and popular destinations.",
     img: "/bg3.JPG",
@@ -95,13 +104,23 @@ export const projects = [
     link: "https://trektales0108.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
+    title: "Career Canvas - Job Seeking Website",
+    des: "CareerCanvas is a sleek job hunting and recruitment platform using React.js, Tailwind CSS, MongoDB, AWS, and Framer Motion for smooth animations.",
+    img: "/bg2.JPG",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://career-canvas.netlify.app/",
+  },
+  {
+    id: 6,
     title: "Donation Service Platform Design",
     des: "Explore the wonders of our donation service website, we used React.js, Tailwind CSS, and MongoDB with cool animations to connect donors to impactful causes worldwide.",
     img: "/bg4.JPG",
     iconLists: ["/re.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg"],
     link: "https://life-stream-donate-0108.netlify.app/",
   },
+  
+ 
   
 ];
 
