@@ -41,15 +41,15 @@ const Hero = () => {
             words="Crafting Exceptional User Experiences from Innovative Ideas"
           />
 
-          <img
+          {/* <img
             className="h-[300px] w-[250px] md:h-[480px] md:w-[420px] lg:h-[570px] lg:w-[510px]  rounded-[50%] mt-5 mb-5 md:mt-10 md:mb-10 lg:mt-10 lg:mb-10"
             src="/profile_pic.png"
             alt=""
-          />
+          /> */}
 
-          <p className="text-center md:tracking-wider mb-4 text-xl md:text-2xl lg:text-4xl mt-4">
+          {/* <p className="text-center md:tracking-wider mb-4 text-xl md:text-2xl lg:text-4xl mt-4">
             Hi, I&apos;m Atiqul Islam, a Full Stack Developer.
-          </p>
+          </p> */}
           <a href="#about">
             <MagicButton
               title="Show my work"
