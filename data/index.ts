@@ -142,9 +142,9 @@ export const testimonials = [
   {
     quote:
       "Partnering with Atiqul Islam was a remarkable experience. Throughout our project, his professionalism, timeliness, and dedication to achieving outstanding results were consistently evident. Adrian's enthusiasm for all aspects of development is truly impressive. If you're aiming to elevate your website and brand, Atiqul is the perfect collaborator.",
-    name: "Shauaib Siddique Shawon",
+    name: "MD Saiful Islam Anik",
     title: "Director of TrekTales",
-    img: "/test3.jpg"
+    img: "/test4.jpg"
   }
   // {
   //   quote:
