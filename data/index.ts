@@ -127,21 +127,21 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Atiqul Islam was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, they are the ideal partner.",
+      "Collaborating with Atiqul Islam was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Atiqul's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, they are the ideal partner.",
     name: "Kamrul Hasan",
     title: "CEO of Octalink Global Sourcing",
     img: "/test1.jpg"
   },
   {
     quote:
-      "Working with Atiqul Islam was a delight. His professionalism, timeliness, and commitment to excellence were clear from start to finish. Adrian's passion for development shines through in every aspect. If you want to enhance your website and brand, they are the perfect choice.",
+      "Working with Atiqul Islam was a delight. His professionalism, timeliness, and commitment to excellence were clear from start to finish. Atiqul's  passion for development shines through in every aspect. If you want to enhance your website and brand, they are the perfect choice.",
     name: "Rashedul Islam",
     title: "Managing Director of Career Canvas",
     img: '/test2.JPG'
   },
   {
     quote:
-      "Partnering with Atiqul Islam was a remarkable experience. Throughout our project, his professionalism, timeliness, and dedication to achieving outstanding results were consistently evident. Adrian's enthusiasm for all aspects of development is truly impressive. If you're aiming to elevate your website and brand, they are the perfect collaborator.",
+      "Partnering with Atiqul Islam was a remarkable experience. Throughout our project, his professionalism, timeliness, and dedication to achieving outstanding results were consistently evident. Atiqul's  enthusiasm for all aspects of development is truly impressive. If you're aiming to elevate your website and brand, they are the perfect collaborator.",
     name: "MD Saiful Islam Anik",
     title: "Director of TrekTales",
     img: "/test4.jpg"
