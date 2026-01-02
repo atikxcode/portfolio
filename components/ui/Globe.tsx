@@ -63,12 +63,12 @@ let numbersOfRings = [0]
 export function Globe({ globeConfig, data }: WorldProps) {
   const [globeData, setGlobeData] = useState<
     | {
-        size: number
-        order: number
-        color: (t: number) => string
-        lat: number
-        lng: number
-      }[]
+      size: number
+      order: number
+      color: (t: number) => string
+      lat: number
+      lng: number
+    }[]
     | null
   >(null)
 
@@ -150,9 +150,13 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
   useEffect(() => {
     if (globeRef.current && globeData) {
+      // Optimize polygon resolution for mobile devices
+      const isMobile = typeof window !== 'undefined' && window.innerWidth < 1024
+      const polygonResolution = isMobile ? 2 : 3
+
       globeRef.current
         .hexPolygonsData(countries.features)
-        .hexPolygonResolution(3)
+        .hexPolygonResolution(polygonResolution)
         .hexPolygonMargin(0.7)
         .showAtmosphere(defaultProps.showAtmosphere)
         .atmosphereColor(defaultProps.atmosphereColor)
@@ -234,7 +238,19 @@ export function WebGLRendererConfig() {
   const { gl, size } = useThree()
 
   useEffect(() => {
-    gl.setPixelRatio(window.devicePixelRatio)
+    // Optimize pixel ratio for mobile devices - reduce GPU load
+    const isMobile = typeof window !== 'undefined' && (
+      window.innerWidth < 1024 ||
+      'ontouchstart' in window ||
+      navigator.maxTouchPoints > 0
+    )
+
+    // Use lower pixel ratio on mobile for better performance
+    const pixelRatio = isMobile
+      ? Math.min(window.devicePixelRatio, 1.5)
+      : Math.min(window.devicePixelRatio, 2)
+
+    gl.setPixelRatio(pixelRatio)
     gl.setSize(size.width, size.height)
     gl.setClearColor(0xffaaff, 0)
   }, [])
@@ -287,10 +303,10 @@ export function hexToRgb(hex: string) {
   var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
   return result
     ? {
-        r: parseInt(result[1], 16),
-        g: parseInt(result[2], 16),
-        b: parseInt(result[3], 16),
-      }
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16),
+    }
     : null
 }
 

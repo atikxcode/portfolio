@@ -32,14 +32,13 @@ export const TextGenerateEffect = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+      <motion.div ref={scope} className="transform-gpu">
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
               key={word + idx}
-              className={`${
-                idx > 3 ? 'text-purple' : 'dark:text-white text-black'
-              } opacity-0`}
+              className={`${idx > 3 ? 'text-purple' : 'dark:text-white text-black'
+                } opacity-0 will-change-opacity will-change-transform`}
               style={{
                 filter: filter ? 'blur(10px)' : 'none',
               }}

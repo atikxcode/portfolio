@@ -75,7 +75,7 @@ export const projects = [
     title: "Octalink Global Sourcing - Global Textile Company",
     des: "OCTALINK GLOBAL SOURCING utilizes React.js, Tailwind CSS, MongoDB, Framer Motion, and AWS with dynamic animations to streamline global textile sourcing and procurement.",
     img: "/bg1.JPG",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg","/md.svg","/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/md.svg", "/fm.svg"],
     link: "https://www.octalink-bd.com/",
   },
   {
@@ -94,7 +94,7 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg"],
     link: "https://clinica-drab.vercel.app/",
   },
-  
+
   {
     id: 4,
     title: "TrekTales a Tourist Website",
@@ -119,9 +119,9 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg"],
     link: "https://life-stream-donate-0108.netlify.app/",
   },
-  
- 
-  
+
+
+
 ];
 
 export const testimonials = [
@@ -196,29 +196,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full Stack Engineer Intern",
+    desc: "Developed full-stack web applications using React.js and Node.js, implementing both frontend interfaces and backend APIs.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Full Stack Web Dev - PH",
-    desc: "Designed and developed web application using React.js, Next.js.",
+    title: "Full Stack Software Developer - PH",
+    desc: "Architected and developed complete web applications using React.js, Next.js, Node.js, MongoDB, and cloud services.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Freelance Full Stack Developer",
+    desc: "Led end-to-end development of client applications, from system design and database architecture to deployment and maintenance.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Lead Full Stack Developer",
+    desc: "Spearheaded development of scalable software solutions, managing both client-side and server-side architecture with modern technologies.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

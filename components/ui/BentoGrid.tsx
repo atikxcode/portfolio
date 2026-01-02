@@ -2,8 +2,9 @@
 import { cn } from '@/lib/utils'
 import { BackgroundGradientAnimation } from './GradientBg'
 import { GlobeDemo } from './GridGlobe'
-import { div } from 'three/webgpu'
-import Lottie from 'react-lottie'
+
+import dynamic from 'next/dynamic'
+const Lottie = dynamic(() => import('react-lottie'), { ssr: false })
 import { useState } from 'react'
 import animationData from '@/data/confetti.json'
 import MagicButton from './MagicButton'
@@ -79,9 +80,8 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${
-            id === 5 && 'w-full opacity-80'
-          }`}
+          className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'
+            }`}
         >
           {spareImg && (
             <img
@@ -142,20 +142,21 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div
-                className={`absolute -bottom-5 right-0 ${
-                  copied ? 'block' : 'block'
-                }`}
+                className={`absolute -bottom-5 right-0 ${copied ? 'block' : 'block'
+                  }`}
               >
-                <Lottie
-                  options={{
-                    loop: copied,
-                    autoplay: copied,
-                    animationData,
-                    rendererSettings: {
-                      preserveAspectRatio: 'xMidYMid slice',
-                    },
-                  }}
-                />
+                {copied && (
+                  <Lottie
+                    options={{
+                      loop: copied,
+                      autoplay: copied,
+                      animationData,
+                      rendererSettings: {
+                        preserveAspectRatio: 'xMidYMid slice',
+                      },
+                    }}
+                  />
+                )}
               </div>
 
               <MagicButton

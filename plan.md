@@ -1,3 +1,3 @@
 [Do not change any design This is the ultimate priority]
-1. Make the whole transaction more smooth more stable for mobile view. Right now it's Too much heavy Make sure it's smooth. 
-2. I want a change. This is a portfolio so obviously I need a portion where My picture will be placed. Make sure to perfectly add a part on the top that looks perfectly balanced. And professional Also.  
+1. Make the portfolio more smooth and stable for mobile desktop tablet laptop. Transaction more smooth without any kind of stutter. Use hardware exceleration if needed to run this in any kind of low configuration devices. 
+2. This portfolio is only for Full stack Developer. Which i don't know what it means am i just web developer from this portfolio. if yes then make sure I look like a professional software develop. Full stack software developer.   
