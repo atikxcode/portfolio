@@ -5,6 +5,7 @@ import { ThemeProvider } from './provider'
 import { CommandBar } from '@/components/ui/CommandBar'
 import { CustomCursor } from '@/components/ui/CustomCursor'
 import { PerformanceWidget } from '@/components/ui/PerformanceWidget'
+import { SmoothScrollProvider } from '@/components/providers/SmoothScrollProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +28,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <SmoothScrollProvider>
+            {children}
+          </SmoothScrollProvider>
           <CommandBar />
           <CustomCursor />
           <PerformanceWidget />

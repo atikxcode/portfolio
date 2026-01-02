@@ -1,4 +1,5 @@
 import Approach from '@/components/Approach'
+import BlogSection from '@/components/BlogSection'
 import Clients from '@/components/Clients'
 import Experience from '@/components/Experience'
 import Footer from '@/components/Footer'
@@ -20,6 +21,8 @@ export default function Home() {
         <RecentProjects></RecentProjects>
         <Clients></Clients>
         <Experience></Experience>
+
+        <BlogSection />
         <Approach></Approach>
         <Footer></Footer>
       </div>
