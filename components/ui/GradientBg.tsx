@@ -1,6 +1,7 @@
 'use client'
 import { cn } from '@/lib/utils'
 import { useEffect, useRef, useState } from 'react'
+import { useMobileDetection } from '@/lib/useMobileDetection'
 
 export const BackgroundGradientAnimation = ({
   gradientBackgroundStart = 'rgb(108, 0, 162)',
@@ -33,6 +34,7 @@ export const BackgroundGradientAnimation = ({
   interactive?: boolean
   containerClassName?: string
 }) => {
+  const { isLowPerformance } = useMobileDetection()
   const interactiveRef = useRef<HTMLDivElement>(null)
 
   const [curX, setCurX] = useState(0)
@@ -59,6 +61,9 @@ export const BackgroundGradientAnimation = ({
   }, [])
 
   useEffect(() => {
+    // Skip interactive animation on mobile for better performance
+    if (isLowPerformance) return
+
     function move() {
       if (!interactiveRef.current) {
         return
@@ -71,9 +76,12 @@ export const BackgroundGradientAnimation = ({
     }
 
     move()
-  }, [tgX, tgY])
+  }, [tgX, tgY, isLowPerformance])
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    // Skip on mobile for better performance
+    if (isLowPerformance) return
+
     if (interactiveRef.current) {
       const rect = interactiveRef.current.getBoundingClientRect()
       setTgX(event.clientX - rect.left)
@@ -85,6 +93,38 @@ export const BackgroundGradientAnimation = ({
   useEffect(() => {
     setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent))
   }, [])
+
+  // On mobile, show only a simple static gradient for better performance
+  if (isLowPerformance) {
+    return (
+      <div
+        className={cn(
+          'h-full w-full absolute overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]',
+          containerClassName
+        )}
+      >
+        <div className={cn('', className)}>{children}</div>
+        <div className="gradients-container h-full w-full blur-lg">
+          <div
+            className={cn(
+              `absolute [background:radial-gradient(circle_at_center,_var(--first-color)_0,_var(--first-color)_50%)_no-repeat]`,
+              `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
+              `[transform-origin:center_center]`,
+              `opacity-100`
+            )}
+          ></div>
+          <div
+            className={cn(
+              `absolute [background:radial-gradient(circle_at_center,_rgba(var(--second-color),_0.8)_0,_rgba(var(--second-color),_0)_50%)_no-repeat]`,
+              `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
+              `[transform-origin:calc(50%-400px)]`,
+              `opacity-100`
+            )}
+          ></div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div

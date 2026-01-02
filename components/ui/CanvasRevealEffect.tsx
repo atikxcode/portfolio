@@ -3,6 +3,7 @@ import { cn } from '@/lib/utils'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import React, { useMemo, useRef } from 'react'
 import * as THREE from 'three'
+import { useMobileDetection } from '@/lib/useMobileDetection'
 
 export const CanvasRevealEffect = ({
   animationSpeed = 0.4,
@@ -23,12 +24,18 @@ export const CanvasRevealEffect = ({
   dotSize?: number
   showGradient?: boolean
 }) => {
+  const { isLowPerformance } = useMobileDetection()
+
+  // On mobile, use reduced settings for better performance
+  const effectiveDotSize = isLowPerformance ? Math.max((dotSize ?? 3) * 1.5, 5) : (dotSize ?? 3)
+  const effectiveMaxFps = isLowPerformance ? 30 : 60
+
   return (
     <div className={cn('h-full relative bg-white w-full', containerClassName)}>
       <div className="h-full w-full">
         <DotMatrix
           colors={colors ?? [[0, 255, 255]]}
-          dotSize={dotSize ?? 3}
+          dotSize={effectiveDotSize}
           opacities={
             opacities ?? [0.3, 0.3, 0.3, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8, 1]
           }
@@ -39,6 +46,7 @@ export const CanvasRevealEffect = ({
               opacity *= clamp((1.0 - step(intro_offset + 0.1, u_time * animation_speed_factor)) * 1.25, 1.0, 1.25);
             `}
           center={['x', 'y']}
+          maxFps={effectiveMaxFps}
         />
       </div>
       {showGradient && (
@@ -55,6 +63,7 @@ interface DotMatrixProps {
   dotSize?: number
   shader?: string
   center?: ('x' | 'y')[]
+  maxFps?: number
 }
 
 const DotMatrix: React.FC<DotMatrixProps> = ({
@@ -64,6 +73,7 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
   dotSize = 2,
   shader = '',
   center = ['x', 'y'],
+  maxFps = 60,
 }) => {
   const uniforms = React.useMemo(() => {
     let colorsArray = [
@@ -140,16 +150,14 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
         }
         void main() {
             vec2 st = fragCoord.xy;
-            ${
-              center.includes('x')
-                ? 'st.x -= abs(floor((mod(u_resolution.x, u_total_size) - u_dot_size) * 0.5));'
-                : ''
-            }
-            ${
-              center.includes('y')
-                ? 'st.y -= abs(floor((mod(u_resolution.y, u_total_size) - u_dot_size) * 0.5));'
-                : ''
-            }
+            ${center.includes('x')
+          ? 'st.x -= abs(floor((mod(u_resolution.x, u_total_size) - u_dot_size) * 0.5));'
+          : ''
+        }
+            ${center.includes('y')
+          ? 'st.y -= abs(floor((mod(u_resolution.y, u_total_size) - u_dot_size) * 0.5));'
+          : ''
+        }
       float opacity = step(0.0, st.x);
       opacity *= step(0.0, st.y);
 
@@ -170,7 +178,7 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
       fragColor.rgb *= fragColor.a;
         }`}
       uniforms={uniforms}
-      maxFps={60}
+      maxFps={maxFps}
     />
   )
 }

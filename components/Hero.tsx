@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
@@ -36,20 +37,32 @@ const Hero = () => {
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Creating Dynamic Web Experiences with Precision and Flair
           </h2>
+
+          {/* Profile Picture Section */}
+          <div className="relative my-8 md:my-12">
+            <div className="relative w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-purple/30 shadow-[0_0_40px_rgba(203,172,249,0.3)]">
+              <Image
+                src="/profile_pic.png"
+                alt="Atiqul Islam - Full Stack Developer"
+                fill
+                className="object-cover object-center"
+                priority
+                sizes="(max-width: 768px) 160px, (max-width: 1024px) 224px, 256px"
+              />
+            </div>
+            {/* Decorative ring */}
+            <div className="absolute inset-0 rounded-full border-2 border-purple/20 -m-2 animate-pulse" />
+          </div>
+
           <TextGenerateEffect
             className="text-center text-[30px] md:text-4xl lg:text-5xl"
             words="Crafting Exceptional User Experiences from Innovative Ideas"
           />
 
-          {/* <img
-            className="h-[300px] w-[250px] md:h-[480px] md:w-[420px] lg:h-[570px] lg:w-[510px]  rounded-[50%] mt-5 mb-5 md:mt-10 md:mb-10 lg:mt-10 lg:mb-10"
-            src="/profile_pic.png"
-            alt=""
-          /> */}
-
-          {/* <p className="text-center md:tracking-wider mb-4 text-xl md:text-2xl lg:text-4xl mt-4">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl mt-4 text-blue-100">
             Hi, I&apos;m Atiqul Islam, a Full Stack Developer.
-          </p> */}
+          </p>
+
           <a href="#about">
             <MagicButton
               title="Show my work"
@@ -64,3 +77,4 @@ const Hero = () => {
 }
 
 export default Hero
+
