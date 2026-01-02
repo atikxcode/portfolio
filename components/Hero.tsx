@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
@@ -9,7 +9,7 @@ import { Hero3D } from './ui/Hero3D'
 import { FaLocationArrow } from 'react-icons/fa6'
 
 const Hero = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
+
 
   return (
     <div className="pb-20 pt-36">
@@ -52,10 +52,9 @@ const Hero = () => {
                 src="/profile_pic.png"
                 alt="Atiqul Islam - Full Stack Developer"
                 fill
-                className={`object-cover object-center transition-opacity duration-700 ease-in-out ${imageLoaded ? 'opacity-100' : 'opacity-0 scale-95'}`}
+                className="object-cover object-center rounded-full"
                 priority
                 sizes="(max-width: 768px) 160px, (max-width: 1024px) 224px, 256px"
-                onLoad={() => setImageLoaded(true)}
               />
             </div>
             {/* Decorative ring */}
