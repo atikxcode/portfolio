@@ -77,6 +77,19 @@ export const projects = [
     img: "/bg1.JPG",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/md.svg", "/fm.svg"],
     link: "https://www.octalink-bd.com/",
+    architecture: {
+      nodes: [
+        { id: "client", label: "Client", subLabel: "React + Tailwind", icon: "💻" },
+        { id: "backend", label: "Backend", subLabel: "Node.js / Express", icon: "⚙️" },
+        { id: "db", label: "Database", subLabel: "MongoDB", icon: "🗄️" },
+        { id: "cloud", label: "Cloud", subLabel: "AWS S3", icon: "☁️" },
+      ],
+      edges: [
+        { source: "client", target: "backend", label: "API REST" },
+        { source: "backend", target: "db", label: "Query" },
+        { source: "backend", target: "cloud", label: "Uploads" },
+      ]
+    }
   },
   {
     id: 2,

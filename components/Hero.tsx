@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
@@ -6,6 +8,8 @@ import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
 
 const Hero = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <div className="pb-20 pt-36">
       {/* Spot Light */}
@@ -40,14 +44,15 @@ const Hero = () => {
 
           {/* Profile Picture Section */}
           <div className="relative my-8 md:my-12">
-            <div className="relative w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-purple/30 shadow-[0_0_40px_rgba(203,172,249,0.3)]">
+            <div className="relative w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-purple/30 shadow-[0_0_40px_rgba(203,172,249,0.3)] bg-[#10132E]">
               <Image
                 src="/profile_pic.png"
                 alt="Atiqul Islam - Full Stack Developer"
                 fill
-                className="object-cover object-center"
+                className={`object-cover object-center transition-opacity duration-700 ease-in-out ${imageLoaded ? 'opacity-100' : 'opacity-0 scale-95'}`}
                 priority
                 sizes="(max-width: 768px) 160px, (max-width: 1024px) 224px, 256px"
+                onLoad={() => setImageLoaded(true)}
               />
             </div>
             {/* Decorative ring */}

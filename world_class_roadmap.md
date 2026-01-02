@@ -32,14 +32,13 @@ To elevate your portfolio from "great" to "world-class," you need to move beyond
 * **CI/CD Pipeline Visualization**: If possible, show the build status of your projects or a visualization of your recent GitHub commit activity in a unique way (e.g., a "heatmap" that looks like a city skyline).
 
 ## 6. Social Proof & Trust
-* **Video Walkthroughs**: Record 30-second Loom-style videos for each project where you voice-over the functionality. It matches a face/voice to the code and builds immense trust.
 * **"Now" Page**: Add a `/now` page (inspired by Derek Sivers) interacting what you are learning, building, and reading *right now*. It shows you are an active, curious learner.
 
 ## Implementation Roadmap
 
-### Phase 1: Polish (Weeks 1-2)
-- [ ] Implement custom cursor and micro-interactions
-- [ ] Add "Command K" navigation
+### Phase 1: Polish (Completed)
+- [x] Implement custom cursor and micro-interactions
+- [x] Add "Command K" navigation
 - [ ] Write one Deep-Dive Case Study for your best project
 
 ### Phase 2: Engineering Flex (Weeks 3-4)
@@ -50,4 +49,3 @@ To elevate your portfolio from "great" to "world-class," you need to move beyond
 ### Phase 3: World Class (Month 2+)
 - [ ] Build the interactive WebGL Hero experience
 - [ ] Launch the technical blog
-- [ ] Record video walkthroughs for all key projects

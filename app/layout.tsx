@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from './provider'
+import { CommandBar } from '@/components/ui/CommandBar'
+import { CustomCursor } from '@/components/ui/CustomCursor'
+import { PerformanceWidget } from '@/components/ui/PerformanceWidget'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +28,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <CommandBar />
+          <CustomCursor />
+          <PerformanceWidget />
         </ThemeProvider>
       </body>
     </html>

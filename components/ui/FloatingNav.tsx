@@ -61,16 +61,20 @@ export const FloatingNav = ({
         )}
       >
         {navItems.map((navItem: any, idx: number) => (
-          <Link
+          <motion.div
             key={`link=${idx}`}
-            href={navItem.link}
-            className={cn(
-              'relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500'
-            )}
+            className="relative flex items-center"
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="!cursor-pointer text-sm">{navItem.name}</span>
-          </Link>
+            <Link
+              href={navItem.link}
+              className={cn(
+                'relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500'
+              )}
+            >
+              <span className="block sm:hidden">{navItem.icon}</span>
+              <span className="!cursor-pointer text-sm">{navItem.name}</span>
+            </Link>
+          </motion.div>
         ))}
       </motion.div>
     </AnimatePresence>
