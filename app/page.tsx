@@ -1,4 +1,5 @@
 import Approach from '@/components/Approach'
+import CreativeLabCTA from '@/components/CreativeLabCTA'
 import BlogSection from '@/components/BlogSection'
 import Clients from '@/components/Clients'
 import Experience from '@/components/Experience'
@@ -24,6 +25,7 @@ export default function Home() {
 
         <BlogSection />
         <Approach></Approach>
+        <CreativeLabCTA />
         <Footer></Footer>
       </div>
     </main>

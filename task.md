@@ -16,3 +16,24 @@
 - [x] Experiment 03: Tone Matrix <!-- id: 13 -->
     - [x] Create `components/lab/ToneMatrix.tsx` <!-- id: 14 -->
     - [x] Create route `app/lab/tone-matrix` <!-- id: 15 -->
+- [x] Experiment 04: Global Network (3D Globe) <!-- id: 16 -->
+    - [x] Create wrapper `components/lab/GlobalNetwork.tsx` <!-- id: 17 -->
+    - [x] Create route `app/lab/global-network` <!-- id: 18 -->
+- [x] Experiment 05: Neural Grid (Shader Matrix) <!-- id: 19 -->
+    - [x] Create wrapper `components/lab/NeuralGrid.tsx` <!-- id: 20 -->
+    - [x] Create route `app/lab/neural-grid` <!-- id: 21 -->
+- [x] Experiment 06: Typing Zen (Particles) <!-- id: 22 -->
+    - [x] Create logic `components/lab/TypingZen.tsx` <!-- id: 23 -->
+    - [x] Create route `app/lab/typing-zen` <!-- id: 24 -->
+- [x] Homepage Integration <!-- id: 25 -->
+    - [x] Create `components/CreativeLabCTA.tsx` <!-- id: 26 -->
+    - [x] Add to `app/page.tsx` below Approach section <!-- id: 27 -->
+- [x] Experiment 07: Quantum Field (Interactive Flow) <!-- id: 28 -->
+    - [x] Create custom logic `components/lab/QuantumField.tsx` <!-- id: 29 -->
+    - [x] Create route `app/lab/quantum` <!-- id: 30 -->
+- [x] Experiment 08: Gravity Well (Physics) <!-- id: 31 -->
+    - [x] Create custom logic `components/lab/GravityWell.tsx` <!-- id: 32 -->
+    - [x] Create route `app/lab/gravity` <!-- id: 33 -->
+- [x] Experiment 09: Audio Visualizer (Custom) <!-- id: 34 -->
+    - [x] Create custom logic `components/lab/AudioViz.tsx` <!-- id: 35 -->
+    - [x] Create route `app/lab/audio-viz` <!-- id: 36 -->

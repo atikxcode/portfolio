@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaArrowLeft, FaCode, FaMusic, FaReact } from "react-icons/fa";
+import { FaArrowLeft, FaCode, FaMusic, FaReact, FaGlobe, FaKeyboard, FaBrain } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const experiments = [
@@ -31,6 +31,60 @@ const experiments = [
         icon: <FaMusic className="w-6 h-6 text-purple" />,
         color: "from-purple/20 to-pink-500/20",
         href: "/lab/tone-matrix",
+        status: "Live"
+    },
+    {
+        id: "global-network",
+        title: "Global Network",
+        description: "Interactive 3D visualization of worldwide connectivity.",
+        icon: <FaGlobe className="w-6 h-6 text-blue-500" />,
+        color: "from-blue-500/20 to-cyan-500/20",
+        href: "/lab/global-network",
+        status: "Live"
+    },
+    {
+        id: "neural-grid",
+        title: "Neural Grid",
+        description: "Hypnotic shader matrix responding to cursor movement.",
+        icon: <FaBrain className="w-6 h-6 text-pink-500" />,
+        color: "from-pink-500/20 to-purple-500/20",
+        href: "/lab/neural-grid",
+        status: "Live"
+    },
+    {
+        id: "typing-zen",
+        title: "Typing Zen",
+        description: "Minimalist typing interface with particle reactions.",
+        icon: <FaKeyboard className="w-6 h-6 text-emerald-400" />,
+        color: "from-emerald-400/20 to-teal-500/20",
+        href: "/lab/typing-zen",
+        status: "Live"
+    },
+    {
+        id: "quantum",
+        title: "Quantum Field",
+        description: "Interactive particle flow field simulation.",
+        icon: <FaBrain className="w-6 h-6 text-pink-500" />,
+        color: "from-pink-500/20 to-rose-500/20",
+        href: "/lab/quantum",
+        status: "Live"
+    },
+    {
+        id: "gravity",
+        title: "Gravity Well",
+        description: "N-body physics sandbox. Spawn black holes and asteroids.",
+        icon: <FaGlobe className="w-6 h-6 text-orange-500" />,
+        color: "from-orange-500/20 to-red-500/20",
+        href: "/lab/gravity",
+        status: "Live"
+    },
+    {
+        id: "audio-viz",
+        title: "Audio Reactor",
+        description: "Real-time circular frequency visualizer with built-in synth.",
+        icon: <FaMusic className="w-6 h-6 text-cyan-400" />,
+        color: "from-cyan-400/20 to-blue-500/20",
+        href: "/lab/audio-viz",
         status: "Live"
     }
 ];
