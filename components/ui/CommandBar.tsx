@@ -67,7 +67,16 @@ export function CommandBar() {
                             No results found.
                         </Command.Empty>
 
-                        <Command.Group heading="Navigation" className="text-[10px] uppercase tracking-wider text-white/30 mb-2 px-2 hidden">
+                        <Command.Group heading="Navigation" className="text-[10px] uppercase tracking-wider text-white/30 mb-2 px-2">
+                            <Command.Item
+                                onSelect={() => runCommand(() => {
+                                    router.push('/lab');
+                                })}
+                                className="flex items-center gap-2 px-2 py-3 rounded-lg text-sm text-white/80 aria-selected:bg-white/10 aria-selected:text-white cursor-pointer transition-colors"
+                            >
+                                <span className="text-xl">🧪</span>
+                                <span>Open Creative Lab</span>
+                            </Command.Item>
                             <Command.Item
                                 onSelect={() => runCommand(() => {
                                     const hero = document.getElementById('about');
@@ -102,7 +111,7 @@ export function CommandBar() {
 
                         <div className="h-px bg-white/10 my-2 mx-2" />
 
-                        <Command.Group heading="Social" className="text-[10px] uppercase tracking-wider text-white/30 mb-2 px-2 hidden">
+                        <Command.Group heading="Social" className="text-[10px] uppercase tracking-wider text-white/30 mb-2 px-2">
                             <Command.Item
                                 onSelect={() => runCommand(() => window.open('https://github.com/atikxcode', '_blank'))}
                                 className="flex items-center gap-2 px-2 py-3 rounded-lg text-sm text-white/80 aria-selected:bg-white/10 aria-selected:text-white cursor-pointer transition-colors"
@@ -121,7 +130,7 @@ export function CommandBar() {
 
                         <div className="h-px bg-white/10 my-2 mx-2" />
 
-                        <Command.Group heading="Actions" className="text-[10px] uppercase tracking-wider text-white/30 mb-2 px-2 hidden">
+                        <Command.Group heading="Actions" className="text-[10px] uppercase tracking-wider text-white/30 mb-2 px-2">
                             <Command.Item
                                 onSelect={() => runCommand(() => {
                                     navigator.clipboard.writeText('atiqul.islam0108@gmail.com');
