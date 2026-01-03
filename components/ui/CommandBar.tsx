@@ -62,7 +62,10 @@ export function CommandBar() {
                         <div className="text-[10px] text-white/30 bg-white/5 px-1.5 py-0.5 rounded border border-white/5">ESC</div>
                     </div>
 
-                    <Command.List className="max-h-[300px] overflow-y-auto p-2 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
+                    <Command.List
+                        data-lenis-prevent
+                        className="max-h-[300px] overflow-y-auto p-2 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent overscroll-contain"
+                    >
                         <Command.Empty className="py-6 text-center text-sm text-white/50">
                             No results found.
                         </Command.Empty>

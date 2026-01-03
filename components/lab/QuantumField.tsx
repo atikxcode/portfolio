@@ -14,10 +14,11 @@ export function QuantumField() {
         let height = canvas.height = window.innerHeight;
 
         const particles: Particle[] = [];
-        const particleCount = 2000;
+        const particleCount = 1000; // Optimized count
         const flowFieldScale = 0.01;
         const flowSpeed = 1;
         let hue = 0;
+        let animationId: number;
 
         class Particle {
             x: number;
@@ -104,7 +105,7 @@ export function QuantumField() {
             });
 
             hue += 0.5;
-            requestAnimationFrame(animate);
+            animationId = requestAnimationFrame(animate);
         }
 
         init();
@@ -126,6 +127,7 @@ export function QuantumField() {
         return () => {
             window.removeEventListener('resize', handleResize);
             window.removeEventListener('mousemove', handleMouseMove);
+            cancelAnimationFrame(animationId);
         }
     }, []);
 

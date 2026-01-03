@@ -12,6 +12,7 @@ export function GravityWell() {
 
         let width = (canvas.width = window.innerWidth);
         let height = (canvas.height = window.innerHeight);
+        let animationId: number;
 
         // Simulation parameters
         const G = 0.5;
@@ -121,7 +122,7 @@ export function GravityWell() {
                 ctx.shadowBlur = 0;
             }
 
-            requestAnimationFrame(update);
+            animationId = requestAnimationFrame(update);
         }
 
         update();
@@ -177,6 +178,7 @@ export function GravityWell() {
             window.removeEventListener("mousedown", onMouseDown);
             window.removeEventListener("mouseup", onMouseUp);
             window.removeEventListener("contextmenu", e => e.preventDefault());
+            cancelAnimationFrame(animationId);
         }
 
     }, []);

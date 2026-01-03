@@ -25,6 +25,8 @@
 - [x] Experiment 06: Typing Zen (Particles) <!-- id: 22 -->
     - [x] Create logic `components/lab/TypingZen.tsx` <!-- id: 23 -->
     - [x] Create route `app/lab/typing-zen` <!-- id: 24 -->
+- [x] Fix CommandBar Scroll Behavior <!-- id: 37 -->
+- [x] Fix Memory Leaks in Experiments (Retry) <!-- id: 38 -->
 - [x] Homepage Integration <!-- id: 25 -->
     - [x] Create `components/CreativeLabCTA.tsx` <!-- id: 26 -->
     - [x] Add to `app/page.tsx` below Approach section <!-- id: 27 -->
