@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a Hotel Project",
+    title: "Currently working on E-Commerce Project",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -70,29 +70,81 @@ export const gridItems = [
 ];
 
 export const projects = [
+
   {
     id: 1,
+    title: "Multi-Category Digital E-Commerce Platform Design",
+    des: "Discover the seamless shopping experience at BuyKorbo, built with Next.js, Node.js, and MongoDB featuring modern UI animations to connect customers with digital products, gaming currencies, streaming subscriptions, and premium clothing worldwide.",
+    img: "/Project_Buykorbo.png",
+    iconLists: ["/next.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg", "/resend.svg"],
+    link: "https://www.buykorbo.com/",
+  },
+  {
+    id: 2,
+    title: "Multi-Vendor E-Commerce Marketplace Platform",
+    des: "Empower your online business with TriDrop, built with Next.js, Node.js, Redis, MongoDB, and PostgreSQL featuring advanced seller dashboards, automated inventory management, integrated payment processing, and powerful analytics tools for vendors to launch, manage, and scale their digital storefronts with unmatched performance.",
+    img: "/Project_Tridrop.png",
+    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/md.svg", "/redis.svg", "/js.svg", "/fm.svg", "/three.svg"],
+    link: "https://tri-drop.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Social Media Platform for Pets",
+    des: "Join Petbok, a pet-focused social network where owners create profiles, share photos and stories, and connect with a community built entirely around their furry, feathery, and scaly friends.",
+    img: "/Project_petbok.png",
+    iconLists: ["/next.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg"],
+    link: "https://petbok.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Advanced Typing Practice Platform Design",
+    des: "Master your typing skills with SnailType, built with Next.js, Node.js, and PostgreSQL featuring comprehensive training modes, weak finger exercises, real-time analytics, and customizable challenges that go beyond traditional typing tests.",
+    img: "/Project_Snailtype.png",
+    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/js.svg", "/fm.svg"],
+    link: "https://snail-type.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "All-in-One IT Solutions Platform Design",
+    des: "Transform your business with Tricode IT, built with Next.js, Node.js, MongoDB and PostgreSQL offering comprehensive software development, web applications, business automation packages, and complete digital infrastructure solutions all in one unified platform.",
+    img: "/Project_tricode.png",
+    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/md.svg",  "/js.svg", "/fm.svg", "/three.svg",],
+    link: "https://tricode-it.vercel.app/",
+  },
+   {
+    id: 6,
+    title: "Affordable Email Delivery Platform Design",
+    des: "Experience cost-effective email infrastructure with MailVexi, built with Next.js, Node.js, and PostgreSQL featuring developer-friendly APIs to connect businesses with reliable transactional and marketing email delivery at a fraction of traditional pricing.",
+    img: "/Project_mailvexi.png",
+    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/js.svg", "/fm.svg"],
+    link: "https://www.buykorbo.com/",
+  },
+  {
+    id: 7,
+    title: "Premium Furniture E-Commerce Platform Design",
+    des: "Discover luxury furniture shopping with Valexa Furniture, built with Next.js, Node.js, and MongoDB showcasing elegant product catalogs, seamless checkout experiences, and sophisticated design elements that bring comfort and style directly to customers across Bangladesh.",
+    img: "/Project_valexa.png",
+    iconLists: ["/next.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg", "/three.svg",],
+    link: "https://www.valexafurniture.com/",
+  },
+  {
+    id: 8,
+    title: "Modern Vape Shop E-Commerce Platform Design",
+    des: "Experience premium vaping products with VWV, built with Next.js, Node.js, and MongoDB featuring comprehensive inventory management, integrated POS system, real-time stock tracking, and seamless shopping experience for vape enthusiasts.",
+    img: "/Project_vwv.png",
+    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/md.svg", "/redis.svg", "/js.svg", "/fm.svg", "/three.svg"],
+    link: "https://vwv-bd.vercel.app/",
+  },
+  {
+    id: 9,
     title: "Octalink Global Sourcing - Global Textile Company",
     des: "OCTALINK GLOBAL SOURCING utilizes React.js, Tailwind CSS, MongoDB, Framer Motion, and AWS with dynamic animations to streamline global textile sourcing and procurement.",
     img: "/bg1.JPG",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/md.svg", "/fm.svg"],
     link: "https://www.octalink-bd.com/",
-    architecture: {
-      nodes: [
-        { id: "client", label: "Client", subLabel: "React + Tailwind", icon: "💻" },
-        { id: "backend", label: "Backend", subLabel: "Node.js / Express", icon: "⚙️" },
-        { id: "db", label: "Database", subLabel: "MongoDB", icon: "🗄️" },
-        { id: "cloud", label: "Cloud", subLabel: "AWS S3", icon: "☁️" },
-      ],
-      edges: [
-        { source: "client", target: "backend", label: "API REST" },
-        { source: "backend", target: "db", label: "Query" },
-        { source: "backend", target: "cloud", label: "Uploads" },
-      ]
-    }
   },
   {
-    id: 2,
+    id: 10,
     title: "Avalon Sky a Banking Management Platform",
     des: "Avalon Sky is a secure and intuitive platform designed to manage all your banking needs in one place. From tracking transactions to transferring funds and adding multiple bank accounts, BankVault offers a streamlined solution for handling your financial information. With a focus on security and ease of use, it simplifies the complexities of managing various bank accounts, ensuring you stay in control of your finances with confidence.",
     img: "/project_bank.JPG",
@@ -100,7 +152,7 @@ export const projects = [
     link: "https://banking-website-32fi.vercel.app/sign-in",
   },
   {
-    id: 3,
+    id: 11,
     title: "Clinica a Easy Solution For Your Daily Checkup",
     des: "Clinica is a convenient online platform that simplifies the process of booking doctor appointments. With Clinica, patients can easily find and reserve checkup slots with healthcare professionals at their preferred time, all from the comfort of their home. Whether you're looking for a general checkup or a specialist consultation, Clinica connects you with qualified doctors, helping you manage your health appointments efficiently and stress-free.",
     img: "/project_clinic.JPG",
@@ -109,7 +161,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 12,
     title: "TrekTales a Tourist Website",
     des: "TrekTales is a curated travel platform using React.js, Tailwind CSS, MongoDB, AWS, and Framer Motion to explore Europe's hidden gems and popular destinations.",
     img: "/bg3.JPG",
@@ -117,7 +169,7 @@ export const projects = [
     link: "https://trektales0108.netlify.app/",
   },
   {
-    id: 5,
+    id: 13,
     title: "Career Canvas - Job Seeking Website",
     des: "CareerCanvas is a sleek job hunting and recruitment platform using React.js, Tailwind CSS, MongoDB, AWS, and Framer Motion for smooth animations.",
     img: "/bg2.JPG",
@@ -125,7 +177,7 @@ export const projects = [
     link: "https://career-canvas.netlify.app/",
   },
   {
-    id: 6,
+    id: 14,
     title: "Donation Service Platform Design",
     des: "Explore the wonders of our donation service website, we used React.js, Tailwind CSS, and MongoDB with cool animations to connect donors to impactful causes worldwide.",
     img: "/bg4.JPG",
@@ -133,32 +185,57 @@ export const projects = [
     link: "https://life-stream-donate-0108.netlify.app/",
   },
 
+  
+
 
 
 ];
 
 export const testimonials = [
-  {
+{
     quote:
-      "Collaborating with Atiqul Islam was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Atiqul's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, they are the ideal partner.",
+      "Atiqul delivered exactly what we needed for our business platform. He understood our requirements quickly, communicated clearly throughout the process, and handled technical challenges without any drama. The end result works smoothly and our team is happy with it.",
     name: "Kamrul Hasan",
-    title: "CEO of Octalink Global Sourcing",
+    title: "CEO & Proprietor of Octalink Global Sourcing",
     img: "/test1.jpg"
   },
   {
     quote:
-      "Working with Atiqul Islam was a delight. His professionalism, timeliness, and commitment to excellence were clear from start to finish. Atiqul's  passion for development shines through in every aspect. If you want to enhance your website and brand, they are the perfect choice.",
+      "I was impressed by how Atiqul handled our project from start to finish. He kept us updated regularly, met every deadline, and the website functions better than we expected. His technical knowledge really showed when solving complex features we needed.",
     name: "Rashedul Islam",
     title: "Managing Director of Career Canvas",
     img: '/test2.JPG'
   },
   {
     quote:
-      "Partnering with Atiqul Islam was a remarkable experience. Throughout our project, his professionalism, timeliness, and dedication to achieving outstanding results were consistently evident. Atiqul's  enthusiasm for all aspects of development is truly impressive. If you're aiming to elevate your website and brand, they are the perfect collaborator.",
+      "Working with Atiqul on our platform was straightforward and productive. He translated our business needs into a working solution efficiently, stayed responsive throughout development, and delivered clean code that our team can actually maintain. Would definitely work with him again.",
     name: "MD Saiful Islam Anik",
-    title: "Director of TrekTales",
+    title: "Head of Designer of Octalink Global Sourcing",
     img: "/test4.jpg"
+  },
+  {
+    quote:
+      "Atiqul built our entire e-commerce system including payment integration and inventory management. Everything works reliably, and he was patient explaining the technical details to our non-tech team. Great experience overall.",
+    name: "Abdur Rohim Paran",
+    title: "Owner of BuyKorbo",
+    img: "/test5.jpg"
+  },
+  {
+    quote:
+      "We needed a custom E-commerce vape shop platform fast, and Atiqul delivered without cutting corners. His code is solid, the backend handles our traffic well, and he actually listens to feedback. Rare to find developers who combine speed with quality like this.",
+    name: "Rifat",
+    title: "Owner of Vibe With Vape",
+    img: "/test6.jpg"
+  },
+  {
+    quote:
+      "Atiqul took our complex requirements and turned them into a working application that our clients love using. He spotted potential issues early, suggested better solutions, and stayed available even after launch for tweaks. Solid developer.",
+    name: "Tanvir Rahman",
+    title: "Co-Founder of NextGen Enterprises",
+    img: "/test7.jpg"
   }
+
+
   // {
   //   quote:
   //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
@@ -209,32 +286,33 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Full Stack Engineer Intern",
-    desc: "Developed full-stack web applications using React.js and Node.js, implementing both frontend interfaces and backend APIs.",
+    title: "E-Commerce Platform Development",
+    desc: "Built multiple production e-commerce platforms including BuyKorbo and VWV, implementing payment gateways, inventory systems, and POS integration serving real customers.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Full Stack Software Developer - PH",
-    desc: "Architected and developed complete web applications using React.js, Next.js, Node.js, MongoDB, and cloud services.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "SaaS Product Development",
+    desc: "Architected and launched MailVexi email delivery platform and TriDrop marketplace, building scalable backend infrastructure with Redis, PostgreSQL, and MongoDB.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance Full Stack Developer",
-    desc: "Led end-to-end development of client applications, from system design and database architecture to deployment and maintenance.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Full-Stack Application Development",
+    desc: "Developed diverse production applications from social platforms (Petbok) to typing trainers (SnailType), implementing complex features like real-time analytics and user authentication.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Full Stack Developer",
-    desc: "Spearheaded development of scalable software solutions, managing both client-side and server-side architecture with modern technologies.",
+    title: "Business Solutions Development",
+    desc: "Created complete business solutions including inventory management systems and IT service platforms, integrating payment processing and automation workflows.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
+
 ];
 
 export const socialMedia = [

@@ -9,6 +9,8 @@ import {
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
+import { useLenis } from 'lenis/react'
+
 export const FloatingNav = ({
   navItems,
   className,
@@ -21,6 +23,7 @@ export const FloatingNav = ({
   className?: string
 }) => {
   const { scrollYProgress } = useScroll()
+  const lenis = useLenis()
 
   const [visible, setVisible] = useState(false)
 
@@ -70,6 +73,12 @@ export const FloatingNav = ({
               className={cn(
                 'relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500'
               )}
+              onClick={(e) => {
+                if (navItem.link.startsWith('#')) {
+                  e.preventDefault()
+                  lenis?.scrollTo(navItem.link)
+                }
+              }}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
               <span className="!cursor-pointer text-sm">{navItem.name}</span>

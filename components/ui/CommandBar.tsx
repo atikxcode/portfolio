@@ -5,10 +5,12 @@ import { Command } from 'cmdk'
 import { useRouter } from 'next/navigation'
 import { IoSearchOutline, IoAlbumsOutline, IoPersonOutline, IoMailOutline, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { cn } from '@/lib/utils'
+import { useLenis } from 'lenis/react'
 
 export function CommandBar() {
     const [open, setOpen] = useState(false)
     const router = useRouter()
+    const lenis = useLenis()
 
     const [isMac, setIsMac] = useState(false)
     const [mounted, setMounted] = useState(false)
@@ -82,8 +84,7 @@ export function CommandBar() {
                             </Command.Item>
                             <Command.Item
                                 onSelect={() => runCommand(() => {
-                                    const hero = document.getElementById('about');
-                                    hero?.scrollIntoView({ behavior: 'smooth' });
+                                    lenis?.scrollTo('#about')
                                 })}
                                 className="flex items-center gap-2 px-2 py-3 rounded-lg text-sm text-white/80 aria-selected:bg-white/10 aria-selected:text-white cursor-pointer transition-colors"
                             >
@@ -92,8 +93,7 @@ export function CommandBar() {
                             </Command.Item>
                             <Command.Item
                                 onSelect={() => runCommand(() => {
-                                    const projects = document.getElementById('projects');
-                                    projects?.scrollIntoView({ behavior: 'smooth' });
+                                    lenis?.scrollTo('#projects')
                                 })}
                                 className="flex items-center gap-2 px-2 py-3 rounded-lg text-sm text-white/80 aria-selected:bg-white/10 aria-selected:text-white cursor-pointer transition-colors"
                             >
@@ -102,8 +102,7 @@ export function CommandBar() {
                             </Command.Item>
                             <Command.Item
                                 onSelect={() => runCommand(() => {
-                                    const contact = document.getElementById('contact');
-                                    contact?.scrollIntoView({ behavior: 'smooth' });
+                                    lenis?.scrollTo('#contact')
                                 })}
                                 className="flex items-center gap-2 px-2 py-3 rounded-lg text-sm text-white/80 aria-selected:bg-white/10 aria-selected:text-white cursor-pointer transition-colors"
                             >

@@ -13,9 +13,9 @@ const Approach = () => {
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Planning & Strategy"
+          title="Discovery & Solution Architecture"
           icon={<AceternityIcon order="Phase 1" />}
-          description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss aspects such as site structure, navigation, and content requirements."
+          description="I'll collaborate with you to understand your business challenges and objectives, then architect a scalable technical solution. I'll define system requirements, database design, API structure, and technology stack to solve your real-world problems efficiently."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -23,9 +23,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Development & Implementation"
           icon={<AceternityIcon order="Phase 2" />}
-          description="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
+          description="Once the architecture is finalized, I begin building your solution with clean, scalable code. From database setup to API development and frontend implementation, I'll keep you updated with regular progress reports and working demos at each milestone."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -40,11 +40,9 @@ const Approach = () => {
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
         <Card
-          title="Development & Launch"
+          title="Build & Deployment"
           icon={<AceternityIcon order="Phase 3" />}
-          description="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          description="I transform requirements into production-ready code, developing robust backend systems, intuitive user interfaces, and seamless integrations. Once tested and optimized, I deploy your application to live servers with monitoring and documentation for smooth operation."
         >
           <CanvasRevealEffect
             animationSpeed={3}

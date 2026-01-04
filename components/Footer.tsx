@@ -3,15 +3,17 @@ import React from 'react'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
 import { socialMedia } from '@/data'
+import NextImage from 'next/image'
 
 const Footer = () => {
   const handleButtonClick = () => {
     const email = 'atiqul.islam0108@gmail.com'
     const subject = encodeURIComponent('Subject Here')
     const body = encodeURIComponent('Body content here')
-    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`
+    // Link to open Gmail compose window directly
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`
 
-    window.open(mailtoLink, '_blank')
+    window.open(gmailLink, '_blank')
   }
 
   return (
@@ -43,9 +45,9 @@ const Footer = () => {
           {socialMedia.map((profile) => (
             <a href={profile.link} target="_blank" key={profile.id}>
               <div className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">
-                <img
+                <NextImage
                   src={profile.img}
-                  alt={profile.id}
+                  alt={String(profile.id)}
                   width={20}
                   height={20}
                 />
@@ -59,4 +61,3 @@ const Footer = () => {
 }
 
 export default Footer
-;<h2>Footer</h2>

@@ -1,5 +1,5 @@
 'use client'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { motion, stagger, useAnimate } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
@@ -15,8 +15,13 @@ export const TextGenerateEffect = ({
   duration?: number
 }) => {
   const [scope, animate] = useAnimate()
+  const hasAnimated = useRef(false)
   let wordsArray = words.split(' ')
+
   useEffect(() => {
+    // Only animate once to prevent re-triggering on scroll
+    if (hasAnimated.current) return
+
     animate(
       'span',
       {
@@ -27,8 +32,10 @@ export const TextGenerateEffect = ({
         duration: duration ? duration : 1,
         delay: stagger(0.2),
       }
-    )
-  }, [scope.current])
+    ).then(() => {
+      hasAnimated.current = true
+    })
+  }, [])
 
   const renderWords = () => {
     return (
@@ -38,9 +45,10 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               className={`${idx > 3 ? 'text-purple' : 'dark:text-white text-black'
-                } opacity-0 will-change-opacity will-change-transform`}
+                } opacity-0`}
               style={{
                 filter: filter ? 'blur(10px)' : 'none',
+                willChange: 'opacity, filter',
               }}
             >
               {word}{' '}
