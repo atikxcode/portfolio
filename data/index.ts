@@ -75,7 +75,7 @@ export const projects = [
     id: 1,
     title: "Multi-Category Digital E-Commerce Platform Design",
     des: "Discover the seamless shopping experience at BuyKorbo, built with Next.js, Node.js, and MongoDB featuring modern UI animations to connect customers with digital products, gaming currencies, streaming subscriptions, and premium clothing worldwide.",
-    img: "/Project_Buykorbo.png",
+    img: "/Project_Buykorbo.PNG",
     iconLists: ["/next.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg", "/resend.svg"],
     link: "https://www.buykorbo.com/",
   },
