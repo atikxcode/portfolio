@@ -83,7 +83,7 @@ export const projects = [
     id: 2,
     title: "Multi-Vendor E-Commerce Marketplace Platform",
     des: "Empower your online business with TriDrop, built with Next.js, Node.js, Redis, MongoDB, and PostgreSQL featuring advanced seller dashboards, automated inventory management, integrated payment processing, and powerful analytics tools for vendors to launch, manage, and scale their digital storefronts with unmatched performance.",
-    img: "/Project_Tridrop.png",
+    img: "/Project_Tridrop.PNG",
     iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/md.svg", "/redis.svg", "/js.svg", "/fm.svg", "/three.svg"],
     link: "https://tri-drop.vercel.app/",
   },
@@ -91,7 +91,7 @@ export const projects = [
     id: 3,
     title: "Social Media Platform for Pets",
     des: "Join Petbok, a pet-focused social network where owners create profiles, share photos and stories, and connect with a community built entirely around their furry, feathery, and scaly friends.",
-    img: "/Project_petbok.png",
+    img: "/Project_petbok.PNG",
     iconLists: ["/next.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg"],
     link: "https://petbok.vercel.app/",
   },
@@ -99,7 +99,7 @@ export const projects = [
     id: 4,
     title: "Advanced Typing Practice Platform Design",
     des: "Master your typing skills with SnailType, built with Next.js, Node.js, and PostgreSQL featuring comprehensive training modes, weak finger exercises, real-time analytics, and customizable challenges that go beyond traditional typing tests.",
-    img: "/Project_Snailtype.png",
+    img: "/Project_Snailtype.PNG",
     iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/js.svg", "/fm.svg"],
     link: "https://snail-type.vercel.app/",
   },
@@ -107,15 +107,15 @@ export const projects = [
     id: 5,
     title: "All-in-One IT Solutions Platform Design",
     des: "Transform your business with Tricode IT, built with Next.js, Node.js, MongoDB and PostgreSQL offering comprehensive software development, web applications, business automation packages, and complete digital infrastructure solutions all in one unified platform.",
-    img: "/Project_tricode.png",
-    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/md.svg",  "/js.svg", "/fm.svg", "/three.svg",],
+    img: "/Project_tricode.PNG",
+    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/md.svg", "/js.svg", "/fm.svg", "/three.svg",],
     link: "https://tricode-it.vercel.app/",
   },
-   {
+  {
     id: 6,
     title: "Affordable Email Delivery Platform Design",
     des: "Experience cost-effective email infrastructure with MailVexi, built with Next.js, Node.js, and PostgreSQL featuring developer-friendly APIs to connect businesses with reliable transactional and marketing email delivery at a fraction of traditional pricing.",
-    img: "/Project_mailvexi.png",
+    img: "/Project_mailvexi.PNG",
     iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/js.svg", "/fm.svg"],
     link: "https://www.buykorbo.com/",
   },
@@ -123,7 +123,7 @@ export const projects = [
     id: 7,
     title: "Premium Furniture E-Commerce Platform Design",
     des: "Discover luxury furniture shopping with Valexa Furniture, built with Next.js, Node.js, and MongoDB showcasing elegant product catalogs, seamless checkout experiences, and sophisticated design elements that bring comfort and style directly to customers across Bangladesh.",
-    img: "/Project_valexa.png",
+    img: "/Project_valexa.PNG",
     iconLists: ["/next.svg", "/tail.svg", "/md.svg", "/js.svg", "/fm.svg", "/three.svg",],
     link: "https://www.valexafurniture.com/",
   },
@@ -131,7 +131,7 @@ export const projects = [
     id: 8,
     title: "Modern Vape Shop E-Commerce Platform Design",
     des: "Experience premium vaping products with VWV, built with Next.js, Node.js, and MongoDB featuring comprehensive inventory management, integrated POS system, real-time stock tracking, and seamless shopping experience for vape enthusiasts.",
-    img: "/Project_vwv.png",
+    img: "/Project_vwv.PNG",
     iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/md.svg", "/redis.svg", "/js.svg", "/fm.svg", "/three.svg"],
     link: "https://vwv-bd.vercel.app/",
   },
@@ -185,14 +185,14 @@ export const projects = [
     link: "https://life-stream-donate-0108.netlify.app/",
   },
 
-  
+
 
 
 
 ];
 
 export const testimonials = [
-{
+  {
     quote:
       "Atiqul delivered exactly what we needed for our business platform. He understood our requirements quickly, communicated clearly throughout the process, and handled technical challenges without any drama. The end result works smoothly and our team is happy with it.",
     name: "Kamrul Hasan",
