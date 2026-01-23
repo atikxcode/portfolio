@@ -84,7 +84,7 @@ export const projects = [
     title: "Multi-Vendor E-Commerce Marketplace Platform",
     des: "Empower your online business with TriDrop, built with Next.js, Node.js, Redis, MongoDB, and PostgreSQL featuring advanced seller dashboards, automated inventory management, integrated payment processing, and powerful analytics tools for vendors to launch, manage, and scale their digital storefronts with unmatched performance.",
     img: "/Project_Tridrop.PNG",
-    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/md.svg", "/redis.svg", "/js.svg", "/fm.svg", "/three.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/Postgresql.svg", "/md.svg", "/redis.svg", "/js.svg", "/fm.svg", "/three.svg"],
     link: "https://tri-drop.vercel.app/",
   },
   {
@@ -100,7 +100,7 @@ export const projects = [
     title: "Advanced Typing Practice Platform Design",
     des: "Master your typing skills with SnailType, built with Next.js, Node.js, and PostgreSQL featuring comprehensive training modes, weak finger exercises, real-time analytics, and customizable challenges that go beyond traditional typing tests.",
     img: "/Project_Snailtype.PNG",
-    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/js.svg", "/fm.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/Postgresql.svg", "/js.svg", "/fm.svg"],
     link: "https://snail-type.vercel.app/",
   },
   {
@@ -108,7 +108,7 @@ export const projects = [
     title: "All-in-One IT Solutions Platform Design",
     des: "Transform your business with Tricode IT, built with Next.js, Node.js, MongoDB and PostgreSQL offering comprehensive software development, web applications, business automation packages, and complete digital infrastructure solutions all in one unified platform.",
     img: "/Project_tricode.PNG",
-    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/md.svg", "/js.svg", "/fm.svg", "/three.svg",],
+    iconLists: ["/next.svg", "/tail.svg", "/Postgresql.svg", "/md.svg", "/js.svg", "/fm.svg", "/three.svg",],
     link: "https://tricode-it.vercel.app/",
   },
   {
@@ -116,7 +116,7 @@ export const projects = [
     title: "Affordable Email Delivery Platform Design",
     des: "Experience cost-effective email infrastructure with MailVexi, built with Next.js, Node.js, and PostgreSQL featuring developer-friendly APIs to connect businesses with reliable transactional and marketing email delivery at a fraction of traditional pricing.",
     img: "/Project_mailvexi.PNG",
-    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/js.svg", "/fm.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/Postgresql.svg", "/js.svg", "/fm.svg"],
     link: "https://www.buykorbo.com/",
   },
   {
@@ -132,7 +132,7 @@ export const projects = [
     title: "Modern Vape Shop E-Commerce Platform Design",
     des: "Experience premium vaping products with VWV, built with Next.js, Node.js, and MongoDB featuring comprehensive inventory management, integrated POS system, real-time stock tracking, and seamless shopping experience for vape enthusiasts.",
     img: "/Project_vwv.PNG",
-    iconLists: ["/next.svg", "/tail.svg", "/postgresql.svg", "/md.svg", "/redis.svg", "/js.svg", "/fm.svg", "/three.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/Postgresql.svg", "/md.svg", "/redis.svg", "/js.svg", "/fm.svg", "/three.svg"],
     link: "https://vwv-bd.vercel.app/",
   },
   {
