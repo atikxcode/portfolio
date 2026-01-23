@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="relative my-8 md:my-12">
             <div className="relative w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-purple/30 shadow-[0_0_40px_rgba(203,172,249,0.3)] bg-[#10132E] will-change-transform">
               <Image
-                src="/profile_pic.png"
+                src="/profile.png"
                 alt="Atiqul Islam - Full Stack Developer"
                 fill
                 className="object-cover object-center rounded-full"
